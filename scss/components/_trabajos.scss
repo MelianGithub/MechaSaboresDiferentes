@@ -1,0 +1,92 @@
+@import '../base/listas';
+
+.trabajos__contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 20px;
+
+    .contenedor__tarjetas {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, 1fr);
+
+        @media screen and (max-width:800px) {
+            grid-gap: 6px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width:500px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+
+        .tarjeta {
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            border: 1px solid lightcoral;
+            border-radius: 10px;
+            background-color: rgba(36, 109, 14, 0.128);
+            transition: all .3s ease-in-out;
+
+        
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            @media screen and (max-width:800px) {
+                padding: 5px;
+
+                &:hover {
+                    transform: none;
+            }
+        }
+
+        
+
+            .tarjeta__img {
+                width: 90%;
+                height: 260px;
+                margin: 0 auto;
+
+                .imagenes-tarjetas {
+                    width: 95%;
+                    height: 95%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+            }
+
+            .tarjeta__texto {
+                border-radius: 10px;
+                padding: 5px;
+
+                p {
+                    font-size: nth($font-size,5);
+
+                    @media screen and (max-width:800px) {
+                        font-size: nth($font-size,3);
+                    }
+
+                }
+            }
+        }
+    }
+
+    .trabajos__instagram a {
+        padding: 1px;
+        font-size: nth($font-size,6);
+        font-weight: bold;
+        text-decoration: none;
+        color: #27ae60;
+
+        &:hover {
+            color: #000301;
+        }
+    }
+}

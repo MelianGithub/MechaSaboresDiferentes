@@ -1,0 +1,72 @@
+@import '../base/listas';
+
+.servicios__contenedor {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    .servicios__contenido {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        padding: 20px;
+
+        @media screen and (max-width:800px) {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        .servicios__fotos {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+
+            @media screen and (max-width:800px) {
+                width: 80%;
+                margin-bottom: 0px;
+            }
+
+            @media screen and (max-width:500px) {
+                width: 90%;
+            }
+
+            .foto {
+                width: 90%;
+                border-radius: 10px;
+
+                @media screen and (max-width:800px) {
+                    width: 70%;
+                }
+
+                @media screen and (max-width:500px) {
+                    width: 90%;
+                }
+            }
+        }
+
+        .servicios__texto {
+            width: 100%;
+            padding: 5px;
+
+            p {
+                font-size: nth($font-size,7);
+
+                @media screen and (max-width:800px) {
+                    font-size: nth($font-size,6);
+                }
+
+                @media screen and (max-width:500px) {
+                    font-size: nth($font-size,5);
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}

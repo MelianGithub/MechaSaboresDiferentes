@@ -1,0 +1,25 @@
+@import '../base/listas';
+
+.scroll {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    right: 0px;
+    top: 50%;
+    position: fixed;
+
+    @media screen and (max-width:500px) {
+        display: none;
+    }
+
+    a {
+        padding-right: 5px;
+        font-size: nth($font-size,8);
+        color: rgba(0, 128, 0, 0.427);
+        margin-top: 10px;
+
+        &:focus {
+            color: rgba(2, 33, 2, 0.703);
+        }
+    }
+}

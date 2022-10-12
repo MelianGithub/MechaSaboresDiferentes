@@ -1,0 +1,45 @@
+@import '../base/listas';
+
+.encabezados {
+    h2 {
+        color: rgba(21, 61, 12, 0.577);
+        font-size: nth($font-size, 9);
+        font-style: italic;
+        text-align: center;
+        padding: 10px;
+
+        @media screen and (max-width:800px) {
+            font-size: nth($font-size, 7);
+            padding: 10px;
+        }
+
+        @media screen and (max-width:500px) {
+            font-size: nth($font-size, 5);
+            padding: 5px;
+        }
+    }
+}
+
+.bordes-sombras {
+    background-color: rgb(245, 246, 238);
+    border-radius: 30px;
+    box-shadow: 0px 5px 25px;
+}
+
+.titulo {
+    display: block;
+    font-size: nth($font-size, 9);
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 5px;
+    text-transform: uppercase;
+
+    @media screen and (max-width:800px) {
+        font-size: nth($font-size, 8);
+    }
+
+    @media screen and (max-width:500px) {
+        font-size: nth($font-size, 7);
+        margin-bottom: 5px;
+    }
+}

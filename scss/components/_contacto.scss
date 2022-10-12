@@ -1,0 +1,86 @@
+@import '../base/listas';
+
+.form__contenedor {
+    width: 95%;
+    height: auto;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    margin-top: 20px;
+
+    @media screen and (max-width:800px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+    }
+
+
+    .form1 {
+        background-image: url(../imagenes/fotopizzas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .form2 {
+        display: grid;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+
+        h2 {
+            font-size: nth($font-size,10);
+            text-align: center;
+            padding: 10px;
+
+            @media screen and (max-width:800px) {
+                font-size: nth($font-size,8);
+            }
+
+            @media screen and (max-width:800px) {
+                font-size: nth($font-size,7);
+            }
+        }
+
+        .input__form {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 5px;
+            outline: none;
+            border: none;
+            resize: none;
+            border-bottom: 2px solid rgba(18, 151, 76, 0.251);
+            border-radius: 10px;
+
+            &:focus {
+                background-color: rgba(167, 230, 72, 0.43);
+            }
+
+            @media screen and (max-width:800px) {
+                width: 95%;
+            }
+        }
+
+        .submit {
+            font-size: nth($font-size,5);
+            cursor: pointer;
+            transition: all .2s ease;
+
+            &:hover {
+                background-color: #27ae60;
+                color: #fff;
+            }
+
+            @media screen and (max-width:800px) {
+                font-size: nth($font-size,2);
+            }
+
+            @media screen and (max-width:500px) {
+                font-size: nth($font-size,4)
+            }
+        }
+    }
+}

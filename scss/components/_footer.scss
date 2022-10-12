@@ -1,0 +1,96 @@
+@import '../base/variables';
+@import '../base/listas';
+
+.footer__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: $bg-color-general;
+    padding: 20px;
+    margin-top: 20px;
+
+    .logo__contenedor--footer {
+        width: 25%;
+
+        @media screen and (max-width:800px) {
+            width: 35%;
+        }
+        @media screen and (max-width:500px) {
+            width: 20%;
+        }
+
+        .footer__logo {
+            width: 100px;
+            border-radius: 50%;
+
+            @media screen and (max-width:800px) {
+                width: 80%;
+            }
+
+            @media screen and (max-width:500px) {
+                width: 50%;
+            }
+        }
+    }
+
+    .derechos__contenedor {
+        width: 90%;
+        padding: 10px;
+
+        @media screen and (max-width:800px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width:500px) {
+            width: 70%;
+        }
+
+        p {
+            font-size: nth($font-size,7);
+            color: #fff;
+
+            @media screen and (max-width:800px) {
+                font-size: nth($font-size,6);
+            }
+
+            @media screen and (max-width:500px) {
+                font-size: nth($font-size,1);
+            }
+        }
+    }
+
+    .iconos__redes {
+        display: flex;
+        justify-content: space-around;
+        margin-right: 40px;
+        height: auto;
+
+        @media screen and (max-width:800px) {
+            margin-right: 0px;
+        }
+
+        @media screen and (max-width:500px) {
+            margin-right: 5px;
+        }
+
+        i {
+            font-size: nth($font-size,9);
+            color: white;
+            padding: 5px;
+
+            &:hover {
+                color: rgba(34, 2, 2, 0.388);
+            }
+
+            @media screen and (max-width:800px) {
+                font-size: nth($font-size,6);
+            }
+
+            @media screen and (max-width:500px) {
+                font-size: nth($font-size,5);
+            }
+        }
+    }
+}
