@@ -1,11 +1,11 @@
 @import '../base/listas';
+@import '../base/mixin';
 
 .servicios__contenedor {
+    @include display-flex;
     width: 95%;
     height: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
 
     .servicios__contenido {
@@ -56,14 +56,14 @@
             padding: 5px;
 
             p {
-                font-size: nth($font-size,7);
+                font-size: nth($font-size, 7);
 
                 @media screen and (max-width:800px) {
-                    font-size: nth($font-size,6);
+                    font-size: nth($font-size, 6);
                 }
 
                 @media screen and (max-width:500px) {
-                    font-size: nth($font-size,5);
+                    font-size: nth($font-size, 5);
                     margin-bottom: 5px;
                 }
             }

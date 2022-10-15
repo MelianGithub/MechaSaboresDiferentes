@@ -1,9 +1,9 @@
 @import '../base/listas';
+@import '../base/mixin';
 
 .scroll {
     width: auto;
-    display: flex;
-    flex-direction: column;
+    @include display-flex;
     right: 0px;
     top: 50%;
     position: fixed;

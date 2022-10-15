@@ -146,11 +146,11 @@ body {
 }
 
 .servicios__contenedor {
+  display: flex;
+  flex-direction: column;
   width: 95%;
   height: 100%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   overflow: hidden;
 }
 .servicios__contenedor .servicios__contenido {
@@ -219,10 +219,10 @@ body {
 }
 
 .nosotros__contenedor {
-  width: 95%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
+  width: 95%;
+  margin: 0 auto;
   overflow: hidden;
   padding: 20px;
   margin-top: 20px;

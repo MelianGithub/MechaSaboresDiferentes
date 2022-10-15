@@ -1,10 +1,10 @@
 @import '../base/listas';
+@import '../base/mixin';
 
 .nosotros__contenedor {
+    @include display-flex;
     width: 95%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
     overflow: hidden;
     padding: 20px;
     margin-top: 20px;
@@ -13,8 +13,7 @@
         display: flex;
 
         @media screen and (max-width:800px) {
-            display: flex;
-            flex-direction: column;
+            @include display-flex;
             align-items: flex-end;
             justify-content: center;
         }

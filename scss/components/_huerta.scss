@@ -1,9 +1,9 @@
 /* Pagina Huerta */
 @import '../base/listas';
+@import '../base/mixin';
 
 .huerta__contenedor {
-    display: flex;
-    flex-direction: column;
+    @include display-flex;
     margin: 15px;
     background-color: rgb(245, 246, 238);
     border-radius: 30px;
