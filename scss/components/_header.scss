@@ -11,7 +11,7 @@
     }
 
     .logo__img {
-        width: 140px;
+        width: 100px;
         border-radius: 50%;
         padding: 10px;
         transition: all .3s ease;
@@ -29,7 +29,7 @@
     .nav-item {
         .nav-link {
             color: white;
-            font-size: nth($font-size, 6);
+            font-size: nth($font-size, 4);
             font-weight: bold;
             cursor: pointer;
             transition: all .3s;
