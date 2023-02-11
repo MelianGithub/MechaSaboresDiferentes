@@ -5,7 +5,7 @@
 
 - 🔭 I’m currently working on [Mecha-Sabores Diferentes](https://github.com/MelianGithub/MechaSaboresDiferentes)
 
-- 🌱 I’m currently learning **HTML, CSS, SCSS, BOOSTRAP5, NODE.JS**
+- 🌱 I’m currently learning ** HTML, CSS, SCSS, BOOSTRAP5 **
 
 - 👨‍💻 All of my projects are available at [https://github.com/MelianGithub](https://github.com/MelianGithub)
 
